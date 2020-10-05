@@ -19,11 +19,11 @@ export class PrimaryView extends QWidget {
     this.setLayout(controls);
     controls.setSpacing(0);
     controls.setContentsMargins(0, 0, 0, 0);
-    const nextButton = new ColorButton(this, ThemeColor.PRIMARY);
+    /*const nextButton = new ColorButton(this, ThemeColor.PRIMARY);
     nextButton.setText(__('PRIMARY_BUTTON_TEXT'));
     nextButton.addEventListener('clicked', () => app.emit(Events.SWITCH_VIEW, 'secondary'));
     controls.addStretch(1);
-    controls.addWidget(nextButton);
+    controls.addWidget(nextButton);*/
     controls.addStretch(1);
   }
 }

@@ -1,10 +1,10 @@
 {
-  "name": "nodegui-boilerplate",
+  "name": "bitwarden-qt",
   "version": "0.1.0",
   "main": "dist/index.js",
   "author": "Ruslan Garifullin <ruslan.g2002@gmail.com>",
   "repository": {
-    "url": "https://github.com/ruslang02/nodegui-boilerplate"
+    "url": "https://github.com/ruslang02/bitwarden-qt"
   },
   "license": "GPL-3.0",
   "bin": {},
@@ -32,7 +32,10 @@
   "dependencies": {
     "@nodegui/nodegui": "^0.25.0",
     "env-paths": "^2.2.0",
-    "i18n": "^0.13.2"
+    "eventsource": "^1.0.7",
+    "i18n": "^0.13.2",
+    "open": "^7.3.0",
+    "ws": "^7.3.1"
   },
   "devDependencies": {
     "@nodegui/packer": "^1.4.1",
@@ -46,6 +49,8 @@
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.6.3",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
     "extract-loader": "^5.1.0",
     "file-loader": "^5.1.0",
     "follow-redirects": "^1.13.0",

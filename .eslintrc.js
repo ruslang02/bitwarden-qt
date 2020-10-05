@@ -4,7 +4,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb-base',
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,6 +17,13 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    "@typescript-eslint/indent": [
+        "error",
+        4,
+        {
+            "ObjectExpression": "first"
+        }
+    ],
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-unused-vars': ['error'],
     'import/extensions': 'off',

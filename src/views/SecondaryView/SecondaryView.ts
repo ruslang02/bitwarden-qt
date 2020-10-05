@@ -26,11 +26,11 @@ export class SecondaryView extends QWidget {
     layout.setContentsMargins(0, 0, 0, 0);
     layout.setSpacing(0);
 
-    const backBtn = new ColorButton(this, ThemeColor.SECONDARY);
+    /*const backBtn = new ColorButton(this, ThemeColor.SECONDARY);
     backBtn.addEventListener('clicked', () => app.emit(Events.SWITCH_VIEW, 'primary'));
     backBtn.setText(__('SECONDARY_BUTTON_TEXT'));
     layout.addStretch(1);
-    layout.addWidget(backBtn);
+    layout.addWidget(backBtn);*/
     layout.addStretch(1);
   }
 }

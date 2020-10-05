@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2019",
+    "target": "es2016",
     "lib": [
       "es6",
       "dom"
     ],
-    "module": "commonjs",
+    "paths": {
+      "jslib/*": [
+        "jslib/src/*"
+      ]
+    },
+    "baseUrl": ".",
+    "module": "es6",
     "allowJs": false,
     "checkJs": false,
     "outDir": "out",

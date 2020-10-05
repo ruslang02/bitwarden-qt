@@ -94,13 +94,14 @@ module.exports = (_env, argv) => {
       extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
       mainFields: ['main'],
       alias: {
-        'fetch': path.join(__dirname, '../node_modules', 'whatwg-fetch', 'fetch.js'),
-      }
+        fetch: path.join(__dirname, '../node_modules', 'whatwg-fetch', 'fetch.js'),
+        jslib: path.join(__dirname, 'jslib/src'),
+      },
     },
     plugins: [
       new CleanWebpackPlugin(),
       new ProvidePlugin({
-        'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+        // 'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
       }),
       new MiniCssExtractPlugin({
         filename: 'themes/[name].css',
